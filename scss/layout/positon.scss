@@ -1,0 +1,14 @@
+.position {
+  &.relative {
+    position: relative;
+  }
+  &.absolute {
+    position: absolute;
+  }
+  &.fixed {
+    position: fixed;
+  }
+  > .item {
+    display: absolute;
+  }
+}

@@ -1,2 +1,4 @@
-# UI KIT
-UI kit for web
+# CSS SNNIPETS
+
+# EXAMPLE
+

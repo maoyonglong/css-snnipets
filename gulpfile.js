@@ -10,39 +10,39 @@ const { src, dest, parallel, series, watch } = require('gulp')
 
 const rollup = require('gulp-rollup')
 const babel = require('rollup-plugin-babel')
-const resolve = require('rollup-plugin-node-resolve')
-const commonjs = require('rollup-plugin-commonjs')
 
 const isProd = process.env.NODE_ENV.trim() == 'prod'
+
+const basename = 'css-snnipets'
 
 const tasks = {
   scss: {
     src: 'scss/**/*.scss',
     entry: 'scss/index.scss',
-    dest: 'dest/css',
+    dest: 'dist/css',
     rename: {
-      basename: 'ui-kit',
+      basename,
       extname: '.css'
     }
   },
   js: {
     src: 'js/**/*.js',
     entry: 'js/index.js',
-    dest: 'dest/js',
+    dest: 'dist/js',
     rename: {
-      basename: 'ui-kit'
+      basename
     }
   },
   example: {
     src: ['example/start.html', 'example/**/!(start|end).html', 'example/end.html'],
-    dest: 'dest/example',
+    dest: 'dist/example',
   },
   static: {
     src: ['example/static/**/*'],
-    dest: 'dest/example/static'
+    dest: 'dist/example/static'
   },
   connect: {
-    root: 'dest',
+    root: 'dist',
     livereload: true,
     port: 8888,
     host: '0.0.0.0'
@@ -69,11 +69,11 @@ function compileJs () {
     .pipe(rollup({
       input: js.entry,
       output: {
-        filename: `ui-kit${isProd ? '.min' : ''}.js`,
+        filename: `${basename}.${isProd ? '.min' : ''}.js`,
         format: 'iife',
         name: 'uiKit'
       },
-      external: ['lodash'],
+      external: ['jQuery'],
       plugins: [
         babel({
           runtimeHelpers: true,

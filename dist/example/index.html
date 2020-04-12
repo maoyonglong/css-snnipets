@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example</title>
+  <link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.css" rel="stylesheet">
+  <link href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/a11y-light.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/css-snnipets.css">
+  <link rel="stylesheet" href="./static/index.css">
+</head>
+<body>
+  <input id="copyInput" type="text" style="position: fixed; opacity: 0;">
+  <div class="container flex-md">
+    <div class="float hidden-md">
+      <a class="float-right btn" data-toggle="#nav" data-toggle-cb="toggleNav" data-toggle-custom="true">
+        <i class="iconfont">&#xe605;</i>
+      </a>
+    </div>
+    <div id="nav" class="nav hidden show-md animated">
+      <div class="part">
+        <h3 class="title">布局</h3>
+        <ul>
+          <li data-href="floatExample" data-href-wrap="main">浮动布局</li>
+          <li data-href="positionExample" data-href-wrap="main">定位布局</li>
+          <li data-href="flexExample" data-href-wrap="main">弹性布局</li>
+          <li data-href="horizontalExample" data-href-wrap="main">水平排列布局</li>
+          <li data-href="threeLayoutExample" data-href-wrap="main">三栏布局</li>
+        </ul>
+      </div>
+      <div class="part">
+        <h3 class="title">辅助类</h3>
+        <ul>
+          <li data-href="colorExample" data-href-wrap="main">颜色</li>
+          <li data-href="otherHelperExample" data-href-wrap="main">其它</li>
+        </ul>
+      </div>
+      <div class="part">
+        <h3 class="title">组件</h3>
+        <ul>
+          <li data-href="btnExample" data-href-wrap="main">按钮</li>
+        </ul>
+      </div>
+    </div>
+    <div id="main" class="main">
+  
+<div id="btnExample" class="example">
+  <h1 class="title">按钮</h1>
+  <div class="desc">
+    <p>按钮组件，基础类名为<span class="keyword">btn</span></p>
+    <p>扩展类名
+      <span class="keyword">green</span>
+      <span class="keyword">red</span>
+      <span class="keyword">blue</span>
+      <span class="keyword">yellow</span>
+      <span class="keyword">outline</span>
+    </p>
+  </div>
+  <div class="result">
+    <a class="btn small">小普通按钮</a>
+    <a class="btn">普通按钮</a>
+    <a class="btn large">大普通按钮</a>
+    <a class="btn text">文本按钮</a>
+    <a class="btn green">绿色按钮</a>
+    <a class="btn red">红色按钮</a>
+    <a class="btn blue">蓝色按钮</a>
+    <a class="btn yellow">黄色按钮</a>
+    <a class="btn green outline">绿色按钮</a>
+    <a class="btn red outline">红色按钮</a>
+    <a class="btn blue outline">蓝色按钮</a>
+    <a class="btn yellow outline">黄色按钮</a>
+  </div>
+  <div class="code-wrap">
+    <div id="btnCode" class="code">
+      <div class="operation">
+        <a class="btn snnipet" data-snnipet>
+          <i class="iconfont">&#xe615;</i>
+        </a>
+        <a class="btn copy" data-copy>
+          <i class="iconfont">&#xe628;</i>
+        </a>
+      </div>
+      <pre>
+        <code class="html">
+          <a class="btn small">小普通按钮</a>
+          <a class="btn">普通按钮</a>
+          <a class="btn large">大普通按钮</a>
+          <a class="btn text">文本按钮</a>
+          <a class="btn green">绿色按钮</a>
+          <a class="btn red">红色按钮</a>
+          <a class="btn blue">蓝色按钮</a>
+          <a class="btn yellow">黄色按钮</a>
+          <a class="btn green outline">绿色按钮</a>
+          <a class="btn red outline">红色按钮</a>
+          <a class="btn blue outline">蓝色按钮</a>
+          <a class="btn yellow outline">黄色按钮</a>
+        </code>
+      </pre>
+    </div>
+    <a class="btn blue outline toggle" data-toggle="#btnCode" data-toggle-cb="toggleCodeCopyBtn">点击展开代码</a>
+  </div>
+</div>
+<div id="colorExample" class="example">
+  <h1 class="title">颜色</h1>
+  <div class="desc">
+    颜色类含作用于字体颜色的<span class="keyword">.blue, .yellow, .red, .green, .gray</span>，
+    也包括它们对应的<span class="keyword">.bg-*</span>用于设置背景颜色
+  </div>
+  <div class="result">
+    <div class="horizontal">
+      <div class="item green">green</div>
+      <div class="item blue">blue</div>
+      <div class="item yellow">yellow</div>
+      <div class="item red">red</div>
+      <div class="item gray">gray</div>
+      <div class="item bg-green">green</div>
+      <div class="item bg-blue">blue</div>
+      <div class="item bg-yellow">yellow</div>
+      <div class="item bg-red">red</div>
+      <div class="item bg-gray">gray</div>
+    </div>
+  </div>
+  <div class="code-wrap">
+    <div id="colorCode" class="code">
+      <div class="operation">
+        <a class="btn snnipet" data-snnipet>
+          <i class="iconfont">&#xe615;</i>
+        </a>
+        <a class="btn copy" data-copy>
+          <i class="iconfont">&#xe628;</i>
+        </a>
+      </div>
+      <pre>
+        <code class="html">
+          <div class="horizontal">
+            <div class="item green">green</div>
+            <div class="item blue">blue</div>
+            <div class="item yellow">yellow</div>
+            <div class="item red">red</div>
+            <div class="item gray">gray</div>
+            <div class="item bg-green">green</div>
+            <div class="item bg-blue">blue</div>
+            <div class="item bg-yellow">yellow</div>
+            <div class="item bg-red">red</div>
+            <div class="item bg-gray">gray</div>
+          </div>
+        </code>
+      </pre>
+    </div>
+    <a class="btn blue outline toggle" data-toggle="#colorCode" data-toggle-cb="toggleCodeCopyBtn">点击展开代码</a>
+  </div>
+</div>
+<div id="flexExample" class="example">
+  <h1 class="title">弹性布局</h1>
+  <div class="desc">
+    <p>实现容器的弹性布局</p>
+    <p>
+      <span class="keyword">.flex</span>会把元素设置为<span class="keyword">display: flex;</span>，即容器采用弹性布局
+    </p>
+    <div>
+      容器相关：
+      <div>
+        <p><span class="keyword">.inline</span>把容器设置为<span class="keyword">inline-block</span></p>
+        <p><span class="keyword">.reverse</span>把子元素排列顺序反转</p>
+        <p><span class="keyword">.column</span>把子元素设置为垂直排列</p>
+        <p><span class="keyword">.center</span>把元素水平垂直居中</p>
+        <p><span class="keyword">.center-row</span>把元素水平居中<span class="keyword">justify-content: center</span></p>
+        <p><span class="keyword">.center-column</span>把元素垂直居中<span class="keyword">align-items: center</span></p>
+        <p><span class="keyword">.between</span>把元素设置为<span class="keyword">justify-content: space-between</span></p>
+        <p><span class="keyword">.around</span>把元素设置为<span class="keyword">justify-content: space-around</span></p>
+      </div>
+      子元素相关：
+      <div>
+        <p>子元素需要加上<span class="keyword">.item</span>才生效</p>
+        <p><span class="keyword">.auto</span>元素自动增长，即<span class="keyword">flow-grow: 1</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="result layout">
+    <div class="flex">
+      <div class="item bg-green">green</div>
+      <div class="item bg-blue">blue</div>
+      <div class="item bg-yellow">yellow</div>
+      <div class="item bg-red">red</div>
+      <div class="item bg-gray">gray</div>
+    </div>
+    <div class="flex reverse">
+      <div class="item bg-green">green</div>
+      <div class="item bg-blue">blue</div>
+      <div class="item bg-yellow">yellow</div>
+      <div class="item bg-red">red</div>
+      <div class="item bg-gray">gray</div>
+    </div>
+    <div class="flex column">
+      <div class="item bg-green">green</div>
+      <div class="item bg-blue">blue</div>
+      <div class="item bg-yellow">yellow</div>
+      <div class="item bg-red">red</div>
+      <div class="item bg-gray">gray</div>
+    </div>
+    <div class="flex center">
+      <div class="item bg-green">green</div>
+      <div class="item bg-blue">blue</div>
+      <div class="item bg-yellow">yellow</div>
+      <div class="item bg-red">red</div>
+      <div class="item bg-gray">gray</div>
+    </div>
+    <div class="flex column reverse">
+      <div class="item bg-green">green</div>
+      <div class="item bg-blue">blue</div>
+      <div class="item bg-yellow">yellow</div>
+      <div class="item bg-red">red</div>
+      <div class="item bg-gray">gray</div>
+    </div>
+    <div class="flex">
+      <div class="item bg-green auto">green</div>
+      <div class="item bg-blue">blue</div>
+      <div class="item bg-yellow">yellow</div>
+      <div class="item bg-red">red</div>
+      <div class="item bg-gray">gray</div>
+    </div>
+  </div>
+  <div class="code-wrap">
+    <div id="flexCode" class="code">
+      <div class="operation">
+        <a class="btn snnipet" data-snnipet>
+          <i class="iconfont">&#xe615;</i>
+        </a>
+        <a class="btn copy" data-copy>
+          <i class="iconfont">&#xe628;</i>
+        </a>
+      </div>
+      <pre>
+        <code class="html">
+          <div class="flex">
+            <div class="item bg-green">green</div>
+            <div class="item bg-blue">blue</div>
+            <div class="item bg-yellow">yellow</div>
+            <div class="item bg-red">red</div>
+            <div class="item bg-gray">gray</div>
+          </div>
+          <div class="flex reverse">
+            <div class="item bg-green">green</div>
+            <div class="item bg-blue">blue</div>
+            <div class="item bg-yellow">yellow</div>
+            <div class="item bg-red">red</div>
+            <div class="item bg-gray">gray</div>
+          </div>
+          <div class="flex column">
+            <div class="item bg-green">green</div>
+            <div class="item bg-blue">blue</div>
+            <div class="item bg-yellow">yellow</div>
+            <div class="item bg-red">red</div>
+            <div class="item bg-gray">gray</div>
+          </div>
+          <div class="flex center">
+            <div class="item bg-green">green</div>
+            <div class="item bg-blue">blue</div>
+            <div class="item bg-yellow">yellow</div>
+            <div class="item bg-red">red</div>
+            <div class="item bg-gray">gray</div>
+          </div>
+          <div class="flex column reverse">
+            <div class="item bg-green">green</div>
+            <div class="item bg-blue">blue</div>
+            <div class="item bg-yellow">yellow</div>
+            <div class="item bg-red">red</div>
+            <div class="item bg-gray">gray</div>
+          </div>
+          <div class="flex">
+            <div class="item bg-green auto">green</div>
+            <div class="item bg-blue">blue</div>
+            <div class="item bg-yellow">yellow</div>
+            <div class="item bg-red">red</div>
+            <div class="item bg-gray">gray</div>
+          </div>
+        </code>
+      </pre>
+    </div>
+    <a class="btn blue outline toggle" data-toggle="#flexCode" data-toggle-cb="toggleCodeCopyBtn">点击展开代码</a>
+  </div>
+</div>
+<div id="floatExample" class="example">
+  <h1 class="title">浮动布局</h1>
+  <div class="desc">
+    <p>实现元素向左向右浮动</p>
+    <p>
+      <span class="keyword">.float</span>会把元素设置为<span class="keyword">.clearfix</span>，即容器消除浮动
+    </p>
+    <p>
+      <span class="keyword">.float-right</span>把元素设置为右浮动，
+      <span class="keyword">.float-left</span>把元素设置为左浮动
+    </p>
+  </div>
+  <div class="result layout">
+    <div class="float">
+      <div class="float-left item bg-green">green</div>
+      <div class="float-right item bg-blue">blue</div>
+    </div>
+  </div>
+  <div class="code-wrap">
+    <div id="floatCode" class="code">
+      <div class="operation">
+        <a class="btn snnipet" data-snnipet>
+          <i class="iconfont">&#xe615;</i>
+        </a>
+        <a class="btn copy" data-copy>
+          <i class="iconfont">&#xe628;</i>
+        </a>
+      </div>
+      <pre>
+        <code class="html">
+          <div class="float">
+            <div class="float-left item bg-green">green</div>
+            <div class="float-right item bg-blue">blue</div>
+          </div>
+        </code>
+      </pre>
+    </div>
+    <a class="btn blue outline toggle" data-toggle="#floatCode" data-toggle-cb="toggleCodeCopyBtn">点击展开代码</a>
+  </div>
+</div>
+<div id="horizontalExample" class="example">
+  <h1 class="title">水平排列布局</h1>
+  <div class="desc">
+    <p>实现容器内子元素水平排列</p>
+    <p>实现方式是把类名为<span class="keyword">item</span>的子元素设置为<span class="keyword">inline-block</span></p>
+  </div>
+  <div class="result layout">
+    <div class="horizontal">
+      <div class="item bg-green">green</div>
+      <div class="item bg-blue">blue</div>
+      <div class="item bg-yellow">yellow</div>
+      <div class="item bg-red">red</div>
+      <div class="item bg-gray">gray</div>
+    </div>
+  </div>
+  <div class="code-wrap">
+    <div id="horizontalCode" class="code">
+      <div class="operation">
+        <a class="btn snnipet" data-snnipet>
+          <i class="iconfont">&#xe615;</i>
+        </a>
+        <a class="btn copy" data-copy>
+          <i class="iconfont">&#xe628;</i>
+        </a>
+      </div>
+      <pre>
+        <code class="html">
+          <div class="horizontal">
+            <div class="item bg-green">green</div>
+            <div class="item bg-blue">blue</div>
+            <div class="item bg-yellow">yellow</div>
+            <div class="item bg-red">red</div>
+            <div class="item bg-gray">gray</div>
+          </div>
+        </code>
+      </pre>
+    </div>
+    <a class="btn blue outline toggle" data-toggle="#horizontalCode" data-toggle-cb="toggleCodeCopyBtn">点击展开代码</a>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<!-- <script src="./static/amfe-flexible.js"></script> -->
+<script src="./static/htmlFormat.js"></script>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="../js/css-snnipets.js"></script>
+<script src="./static//index.js"></script>
+</body>
+</html>

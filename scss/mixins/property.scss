@@ -1,8 +1,0 @@
-@mixin mapProperties ($map) {
-  @each $key in map-keys($map) {
-    #{$key}: map-get($map, $key);
-  }
-}
-@mixin subProperties ($property, $subs) {
-  @include mapProperties(dashProperties($property, $subs));
-}

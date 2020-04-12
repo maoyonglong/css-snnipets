@@ -1,0 +1,130 @@
+<div id="flexExample" class="example">
+  <h1 class="title">弹性布局</h1>
+  <div class="desc">
+    <p>实现容器的弹性布局</p>
+    <p>
+      <span class="keyword">.flex</span>会把元素设置为<span class="keyword">display: flex;</span>，即容器采用弹性布局
+    </p>
+    <div>
+      容器相关：
+      <div>
+        <p><span class="keyword">.inline</span>把容器设置为<span class="keyword">inline-block</span></p>
+        <p><span class="keyword">.reverse</span>把子元素排列顺序反转</p>
+        <p><span class="keyword">.column</span>把子元素设置为垂直排列</p>
+        <p><span class="keyword">.center</span>把元素水平垂直居中</p>
+        <p><span class="keyword">.center-row</span>把元素水平居中<span class="keyword">justify-content: center</span></p>
+        <p><span class="keyword">.center-column</span>把元素垂直居中<span class="keyword">align-items: center</span></p>
+        <p><span class="keyword">.between</span>把元素设置为<span class="keyword">justify-content: space-between</span></p>
+        <p><span class="keyword">.around</span>把元素设置为<span class="keyword">justify-content: space-around</span></p>
+      </div>
+      子元素相关：
+      <div>
+        <p>子元素需要加上<span class="keyword">.item</span>才生效</p>
+        <p><span class="keyword">.auto</span>元素自动增长，即<span class="keyword">flow-grow: 1</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="result layout">
+    <div class="flex">
+      <div class="item bg-green">green</div>
+      <div class="item bg-blue">blue</div>
+      <div class="item bg-yellow">yellow</div>
+      <div class="item bg-red">red</div>
+      <div class="item bg-gray">gray</div>
+    </div>
+    <div class="flex reverse">
+      <div class="item bg-green">green</div>
+      <div class="item bg-blue">blue</div>
+      <div class="item bg-yellow">yellow</div>
+      <div class="item bg-red">red</div>
+      <div class="item bg-gray">gray</div>
+    </div>
+    <div class="flex column">
+      <div class="item bg-green">green</div>
+      <div class="item bg-blue">blue</div>
+      <div class="item bg-yellow">yellow</div>
+      <div class="item bg-red">red</div>
+      <div class="item bg-gray">gray</div>
+    </div>
+    <div class="flex center">
+      <div class="item bg-green">green</div>
+      <div class="item bg-blue">blue</div>
+      <div class="item bg-yellow">yellow</div>
+      <div class="item bg-red">red</div>
+      <div class="item bg-gray">gray</div>
+    </div>
+    <div class="flex column reverse">
+      <div class="item bg-green">green</div>
+      <div class="item bg-blue">blue</div>
+      <div class="item bg-yellow">yellow</div>
+      <div class="item bg-red">red</div>
+      <div class="item bg-gray">gray</div>
+    </div>
+    <div class="flex">
+      <div class="item bg-green auto">green</div>
+      <div class="item bg-blue">blue</div>
+      <div class="item bg-yellow">yellow</div>
+      <div class="item bg-red">red</div>
+      <div class="item bg-gray">gray</div>
+    </div>
+  </div>
+  <div class="code-wrap">
+    <div id="flexCode" class="code">
+      <div class="operation">
+        <a class="btn snnipet" data-snnipet>
+          <i class="iconfont">&#xe615;</i>
+        </a>
+        <a class="btn copy" data-copy>
+          <i class="iconfont">&#xe628;</i>
+        </a>
+      </div>
+      <pre>
+        <code class="html">
+          <div class="flex">
+            <div class="item bg-green">green</div>
+            <div class="item bg-blue">blue</div>
+            <div class="item bg-yellow">yellow</div>
+            <div class="item bg-red">red</div>
+            <div class="item bg-gray">gray</div>
+          </div>
+          <div class="flex reverse">
+            <div class="item bg-green">green</div>
+            <div class="item bg-blue">blue</div>
+            <div class="item bg-yellow">yellow</div>
+            <div class="item bg-red">red</div>
+            <div class="item bg-gray">gray</div>
+          </div>
+          <div class="flex column">
+            <div class="item bg-green">green</div>
+            <div class="item bg-blue">blue</div>
+            <div class="item bg-yellow">yellow</div>
+            <div class="item bg-red">red</div>
+            <div class="item bg-gray">gray</div>
+          </div>
+          <div class="flex center">
+            <div class="item bg-green">green</div>
+            <div class="item bg-blue">blue</div>
+            <div class="item bg-yellow">yellow</div>
+            <div class="item bg-red">red</div>
+            <div class="item bg-gray">gray</div>
+          </div>
+          <div class="flex column reverse">
+            <div class="item bg-green">green</div>
+            <div class="item bg-blue">blue</div>
+            <div class="item bg-yellow">yellow</div>
+            <div class="item bg-red">red</div>
+            <div class="item bg-gray">gray</div>
+          </div>
+          <div class="flex">
+            <div class="item bg-green auto">green</div>
+            <div class="item bg-blue">blue</div>
+            <div class="item bg-yellow">yellow</div>
+            <div class="item bg-red">red</div>
+            <div class="item bg-gray">gray</div>
+          </div>
+        </code>
+      </pre>
+    </div>
+    <a class="btn blue outline toggle" data-toggle="#flexCode" data-toggle-cb="toggleCodeCopyBtn">点击展开代码</a>
+  </div>
+</div>

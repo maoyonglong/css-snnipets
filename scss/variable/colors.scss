@@ -1,0 +1,16 @@
+$c-dark: #3b3f50 !default;
+$c-light: #f0f0f0 !default;
+$c-gray: #7c8194 !default;
+$c-blue: #47aafe !default;
+$c-deepBlue: #275ab7 !default;
+$c-red: #f96868 !default;
+$c-yellow: #ffae6b !default;
+$c-green: #59d99e !default;
+
+$colors: (
+  'green': $c-green,
+  'blue': $c-blue,
+  'yellow': $c-yellow,
+  'red': $c-red,
+  'gray': $c-gray
+);
