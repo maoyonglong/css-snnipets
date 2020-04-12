@@ -1,0 +1,3 @@
+@function px2rem ($px: 1, $dWidth: 750) {
+  @return $px * 10 / $dWidth + rem;
+}

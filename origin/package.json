@@ -1,0 +1,67 @@
+{
+  "name": "css-snnipets",
+  "version": "1.0.0",
+  "description": "useful css snnipets for web",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run watch",
+    "dev": "set NODE_ENV=dev && npx gulp",
+    "build": "set NODE_ENV=prod && npx gulp",
+    "watch": "set NODE_ENV=dev && npx gulp watch",
+    "eslint": "npx eslint js/**/*.js",
+    "eslint-fix": "npx eslint js/**/*.js --fix",
+    "stylelint": "npx stylelint scss/**/*.scss",
+    "stylelint-fix": "npx stylelint scss/**/*.scss --fix",
+    "test": "npx mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maoyonglong/ui-kit.git"
+  },
+  "keywords": [
+    "ui",
+    "kit",
+    "component"
+  ],
+  "author": "maoyonglong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maoyonglong/ui-kit/issues"
+  },
+  "homepage": "https://github.com/maoyonglong/ui-kit#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-transform-classes": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/runtime": "^7.8.3",
+    "autoprefixer": "^9.7.4",
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "glob": "^7.1.6",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-if": "^3.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-rollup": "^2.16.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "mocha": "^7.0.0",
+    "node-sass": "^4.13.1",
+    "postcss": "^7.0.26",
+    "postcss-scss": "^2.0.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "stylelint": "^13.0.0",
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-order": "^4.0.0",
+    "stylelint-scss": "^3.13.0"
+  }
+}

@@ -1,0 +1,10 @@
+.float {
+  @extend .clearfix;
+
+  &-left {
+    float: left;
+  }
+  &-right {
+    float: right;
+  }
+}

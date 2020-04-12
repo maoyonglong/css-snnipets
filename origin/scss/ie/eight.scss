@@ -1,0 +1,16 @@
+/**
+  兼容ie8+，需要加上.ie8类名
+*/
+.ie8 {
+  .clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .horizontal {
+    > .item {
+      display: inline;
+      zoom: 1;
+    }
+  }  
+}

@@ -1,0 +1,18 @@
+@function dashProperties ($property, $subs) {
+  $map: ();
+  @each $sub in map-keys($subs) {
+    $subVal: map-get($subs, $sub);
+    @if type-of($subVal) == 'map' {
+      $map: map-merge($map, dashproperties(#{$property}-#{$sub}, $subVal));
+    }
+    @else {
+      $map: map-merge(
+        $map,
+        (
+          #{$property}-#{$sub}: $subVal
+        )
+      );
+    }
+  }
+  @return $map;
+}

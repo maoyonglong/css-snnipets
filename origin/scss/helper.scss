@@ -1,0 +1,55 @@
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+@each $name, $color in $colors {
+  .#{$name} {
+    color: $color;
+  }
+  .bg-#{$name} {
+    background: $color;
+  }
+}
+
+/**
+  不使用.hidden.sm的组合，因为.hidden和.show冲突
+*/
+.hidden {
+  display: none;
+  &-sm {
+    @media (min-width: $sm) {
+      display: none;
+    }
+  }
+  &-md {
+    @media (min-width: $sm) {
+      display: none;
+    }
+  }
+  &-lg {
+    @media (min-width: $sm) {
+      display: none;
+    }
+  }
+}
+
+.show {
+  display: block;
+  &-sm {
+    @media (min-width: $sm) {
+      display: block;
+    }
+  }
+  &-md {
+    @media (min-width: $sm) {
+      display: block;
+    }
+  }
+  &-lg {
+    @media (min-width: $sm) {
+      display: block;
+    }
+  }
+}

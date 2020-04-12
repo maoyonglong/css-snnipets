@@ -1,0 +1,78 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-order"
+  ],
+  "rules": {
+    "at-rule-empty-line-before": ["always", {
+      "except": ["after-same-name", "inside-block", "blockless-after-same-name-blockless", "blockless-after-blockless", "first-nested"]
+    }],
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": ["if", "else", "mixin", "each", "for", "function", "extend", "include", "return"]
+    }],
+    "scss/dollar-variable-colon-space-after": "always",
+    "scss/double-slash-comment-empty-line-before": ["always", {
+      "except": ["first-nested"]
+    }],
+    "order/properties-order": [[
+      "position",
+      "top",
+      "right",
+      "bottom",
+      "left",
+      "content",
+      "display",
+      "flex-flow",
+      "flex-direction",
+      "flex-wrap",
+      "justify-content",
+      "align-items",
+      "align-content",
+      "flex",
+      "flex-grow",
+      "flex-shrink",
+      "flex-basis",
+      "align-self",
+      "order",
+      "vertical-align",
+      "width",
+      "height",
+      "padding",
+      "padding-top",
+      "padding-right",
+      "padding-bottom",
+      "padding-left",
+      "margin",
+      "margin-top",
+      "margin-right",
+      "margin-bottom",
+      "margin-left",
+      "text-align",
+      "font",
+      "font-size",
+      "font-weight",
+      "line-height",
+      "color",
+      "background",
+      "background-color",
+      "background-image",
+      "background-position",
+      "background-size",
+      "background-repeat",
+      "background-origin",
+      "background-clip",
+      "background-attachment",
+      "border",
+      "border-top",
+      "border-right",
+      "border-bottom",
+      "border-left",
+      "transition",
+      "transform",
+      "animation"
+    ], {
+      unspecified: "top"
+    }]
+  }
+}

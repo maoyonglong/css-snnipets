@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example</title>
+  <link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.css" rel="stylesheet">
+  <link href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/a11y-light.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/css-snnipets.css">
+  <link rel="stylesheet" href="./static/index.css">
+</head>
+<body>
+  <input id="copyInput" type="text" style="position: fixed; opacity: 0;">
+  <div class="container flex-md">
+    <div class="float hidden-md">
+      <a class="float-right btn" data-toggle="#nav" data-toggle-cb="toggleNav" data-toggle-custom="true">
+        <i class="iconfont">&#xe605;</i>
+      </a>
+    </div>
+    <div id="nav" class="nav hidden show-md animated">
+      <div class="part">
+        <h3 class="title">布局</h3>
+        <ul>
+          <li data-href="floatExample" data-href-wrap="main">浮动布局</li>
+          <li data-href="positionExample" data-href-wrap="main">定位布局</li>
+          <li data-href="flexExample" data-href-wrap="main">弹性布局</li>
+          <li data-href="horizontalExample" data-href-wrap="main">水平排列布局</li>
+          <li data-href="threeLayoutExample" data-href-wrap="main">三栏布局</li>
+        </ul>
+      </div>
+      <div class="part">
+        <h3 class="title">辅助类</h3>
+        <ul>
+          <li data-href="colorExample" data-href-wrap="main">颜色</li>
+          <li data-href="otherHelperExample" data-href-wrap="main">其它</li>
+        </ul>
+      </div>
+      <div class="part">
+        <h3 class="title">组件</h3>
+        <ul>
+          <li data-href="btnExample" data-href-wrap="main">按钮</li>
+        </ul>
+      </div>
+    </div>
+    <div id="main" class="main">
+  
